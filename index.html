@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SheCodes Hometown Landing Page</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kenia&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@200&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/f0f3454e6b.js" crossorigin="anonymous"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .mumbai-font {
+            font-family: 'Kenia', cursive;
+            font-size: 80px;
+            text-align: center;
+            color: #3E6D9C;
+            padding: 0;
+            line-height: 50%;
+        }
+
+        .city-of-dreams {
+            font-family: cursive;
+            font-size: 15px;
+            color: #3E6D9C;
+            text-align: center;
+
+        }
+
+        .section1 {
+            position: relative;
+            width: 100%;
+            height: 90vh;
+            background: #3586ff;
+            background-image: url("https://i.ibb.co/pW7NH8Q/28929606-7377105.jpg");
+            background-size: contain;
+            overflow: hidden;
+        }
+
+        .section2 {
+            position: relative;
+            width: 100%;
+            height: 400px;
+            text-align: center;
+            font-family: 'Anek Devanagari', sans-serif;
+            font-size: 20px;
+            color: #3E6D9C;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .section3 {
+            position: relative;
+            width: 100%;
+            height: 800px;
+            text-align: center;
+            font-family: 'Anek Devanagari', sans-serif;
+            font-size: 20px;
+            /* color:#3E6D9C; */
+            padding: 20px;
+            text-align: center;
+        }
+
+        .carousel-para {
+            background-color: black;
+            opacity: 0.75;
+        }
+
+        .carousel-h4 span {
+            background-color: black;
+            opacity: 0.75;
+
+        }
+
+        .section4 {
+            position: relative;
+            width: 100%;
+            height: auto;
+            background: no-repeat;
+            object-fit: cover;
+
+        }
+
+
+        section .wave {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background: url("https://i.ibb.co/wpXJSSq/wave.png");
+            background-size: 1000px 100px;
+        }
+
+        section .wave.wave1 {
+            animation: animate 30s linear infinite;
+            z-index: 1000;
+            opacity: 1;
+            animation-delay: 0s;
+            bottom: 0;
+        }
+
+        section .wave.wave2 {
+            animation: animate2 15s linear infinite;
+            z-index: 999;
+            opacity: 0.5;
+            animation-delay: -5s;
+            bottom: 10px;
+        }
+
+        section .wave.wave3 {
+            animation: animate 30s linear infinite;
+            z-index: 998;
+            opacity: 0.2;
+            animation-delay: -2s;
+            bottom: 15px;
+        }
+
+        section .wave.wave4 {
+            animation: animate2 15s linear infinite;
+            z-index: 997;
+            opacity: 0.7;
+            animation-delay: -5s;
+            bottom: 20px;
+        }
+
+        @keyframes animate {
+            0% {
+                background-position-x: 0;
+            }
+
+            100% {
+                background-position-x: 1000px;
+
+            }
+        }
+
+        @keyframes animate2 {
+            0% {
+                background-position-x: 0;
+            }
+
+            100% {
+                background-position-x: 1000px;
+
+            }
+        }
+
+        .carousel-inner>.item>img {
+            height: 650px !important;
+            width: 100%;
+            margin: 0;
+        }
+
+        footer {
+            line-height: 3.5;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- HEADINGS -------------------------------------------------------------------->
+    <header>
+        <nav class="bg-light">
+            <h1 class="mumbai-font">Mumbai</h1>
+            <h5 class="city-of-dreams">The City of Dreams</h5>
+        </nav>
+    </header>
+    <!-- END OF HEADINGS -------------------------------------------------------------->
+
+    <!-- SECTION 1 MUMBAI MAIN IMAGE WITH WAVE ANIMATION------------------------------->
+    <section class="section1">
+        <div class="header"></div>
+        <div class="wave wave1"></div>
+        <div class="wave wave2"></div>
+        <div class="wave wave3"></div>
+        <div class="wave wave4"></div>
+    </section>
+    <!-- END OF SECTION 1 MUMBAI MAIN IMAGE WITH WAVE ANIMATION------------------------->
+
+    <!-- SECTION 2 MUMBAI SUMMARY------------------------------------------------------->
+    <section class="section2">
+        <!-- <hr class="my-4"> -->
+
+        <p>Synonymous with Mayanagri or 'The City of Dreams', Mumbai is a historic and bustling city not just for the
+            people of India but for many
+            well beyond the billion strong country's borders. Home to Bollywood - the world's largest film production
+            Industry, Mumbai is diverse and glamorous. All Mumbaikars (-kar meaning a resident of in Marathi language)
+            say that there is no
+            place like Mumbai and there are many reasons that make them fall for their city over and over again. </p>
+        <p>Want to know why?</p>
+        <!-- <hr class="my-4"> -->
+        <a class="btn btn-primary btn-lg" href="#section-3" role="button">Find Out!</a>
+        <!-- <hr class="my-4"> -->
+
+    </section>
+    <!-- END OF SECTION 2 MUMBAI SUMMARY------------------------------------------------>
+
+    <!-- SECTION 3 CAROUSEL WITH MUMBAI FACTS------------------------------------------->
+    <section class="section3" id="section-3">
+        <!-- <hr class="my-4"> -->
+
+        <div class="container">
+            <!-- <h2>Carousel Example</h2> -->
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                    <li data-target="#myCarousel" data-slide-to="4"></li>
+                    <li data-target="#myCarousel" data-slide-to="5"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+
+                    <div class="item active">
+                        <img src="https://live.staticflickr.com/2773/4321322575_bb6c6d44bf_c.jpg" alt="Los Angeles"
+                            style="width:100%;">
+                        <div class="carousel-caption">
+                            <h4 class="carousel-h4"><span>Entertainment Capital of India</span></h4>
+                            <p class="carousel-para">Mumbai is famous as the home of Bollywood – which releases 1000
+                                movies a year</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="https://www.holidify.com/images/cmsuploads/compressed/crowd_20190621173000.jpg"
+                            alt="Los Angeles" style="width:100%;">
+                        <div class="carousel-caption">
+                            <h4 class="carousel-h4"><span>Mumbai is the most populous city in India</span></h4>
+                            <p class="carousel-para">It's not surprising that Mumbai is known to be the most populous
+                                city in India, given its
+                                population is over 22 million!</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="https://www.holidify.com/images/cmsuploads/compressed/mumbaiorigin_20190710151956.jpg"
+                            alt="New York" style="width:100%;">
+                        <div class="carousel-caption">
+                            <h4 class="carousel-h4"><span>From Bombay to Mumbai</span></h4>
+                            <p class="carousel-para">Mumbai was initially called Bombay. </p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="https://www.holidify.com/images/cmsuploads/compressed/cstunesco_20190709182634.jpg"
+                            alt="Chicago" style="width:100%;">
+                        <div class="carousel-caption">
+                            <h4 class="carousel-h4"><span>Mumbai is home to multiple UNESCO World Heritage Sites</span>
+                            </h4>
+                            <p class="carousel-para">Mumbai houses three of the most popular world heritage sites - the
+                                Elephanta Caves,
+                                Chhatrapati Shivaji Terminus and the
+                                different Victorian and Art deco buildings.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="https://brbgonesomewhereepic.com/wp-content/uploads/2020/08/Mumbai-coast-768x441.jpg"
+                            alt="Chicago" style="width:100%;">
+                        <div class="carousel-caption">
+                            <h4 class="carousel-h4"><span>A City of 7 Islands</span></h4>
+                            <p class="carousel-para">Mumbai was once an archipelago of seven different islands, known as
+                                Isle of Bombay,
+                                Colaba, Old Woman’s Island (or Little Colaba), Mahim, Parel, Mazagaon, and Worli.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <br />
+
+        <a class="btn btn-primary btn-lg explore-more" href="#section-4" role="button">Explore by Monument</a>
+        <!-- <hr class="my-4"> -->
+
+    </section>
+    <!-- END OF SECTION 3 CAROUSEL WITH MUMBAI FACTS------------------------------------>
+
+    <!-- SECTION 4 THINGS TO DO WITH IMAGE MAP ----------------------------------------->
+    <section class="section4" id="section-4">
+        <!-- <hr class="my-4"> -->
+
+        <!-- <h1>Things To Do</h1> -->
+        <h4 class="text-center" style="color:#3E6D9C;" style="font-family: 'Anek Devanagari', sans-serif;">Click on a
+            Monument to find out more about this historical and vibrant city!</h4>
+        <div class="image-swap">
+            <!-- <img src="https://i.ibb.co/rMCVdd1/vector-mumbai-landmark-icon.png"> -->
+
+            <img src="https://i.ibb.co/0qGY9Rx/vector-mumbai-landmark-icon-colored.png" usemap="#image_map"
+                class="img-fluid">
+            <map name="image_map">
+                <area alt="David Sassoon Library" title="David Sassoon Library"
+                    href="https://www.tripadvisor.ca/Attraction_Review-g304554-d8720561-Reviews-David_Sassoon_Library_and_Reading_Room-Mumbai_Maharashtra.html"
+                    coords="64,146,345,431" shape="rect">
+                <area alt="Worli Fort" title="Worli Fort"
+                    href="https://www.tripadvisor.ca/Attraction_Review-g304554-d8845352-Reviews-Worli_Fort-Mumbai_Maharashtra.html"
+                    coords="356,151,686,383" shape="rect">
+                <area alt="Rajabai Clock Tower" title="Rajabai Clock Tower"
+                    href="https://www.tripadvisor.ca/Attraction_Review-g304554-d321439-Reviews-Rajabai_Clock_Tower-Mumbai_Maharashtra.html"
+                    coords="695,154,998,388" shape="rect">
+                <area alt="Global Vipassana Pagoda" title="Global Vipassana Pagoda"
+                    href="https://www.tripadvisor.ca/Attraction_Review-g304554-d2514810-Reviews-Global_Vipassana_Pagoda-Mumbai_Maharashtra.html"
+                    coords="1017,157,1348,394" shape="rect">
+                <area alt="Siddhivinayak Temple" title="Siddhivinayak Temple"
+                    href="https://www.tripadvisor.ca/Attraction_Review-g304554-d622586-Reviews-Shree_Siddhivinayak-Mumbai_Maharashtra.html"
+                    coords="66,618,351,843" shape="rect">
+                <area alt="Chhatrapati Shivaji Terminus" title="Chhatrapati Shivaji Terminus"
+                    href="https://www.tripadvisor.ca/Attraction_Review-g304554-d321412-Reviews-Chhatrapati_Shivaji_Terminus-Mumbai_Maharashtra.html"
+                    coords="380,621,778,852" shape="rect">
+                <area alt="Haji Ali Dargah" title="Haji Ali Dargah"
+                    href="https://www.tripadvisor.ca/Attraction_Review-g304554-d311668-Reviews-Haji_Ali_Mosque-Mumbai_Maharashtra.html"
+                    coords="794,624,1029,855" shape="rect">
+                <area alt="Gateway of India" title="Gateway of India"
+                    href="https://www.tripadvisor.ca/Attraction_Review-g304554-d311667-Reviews-Gateway_of_India-Mumbai_Maharashtra.html"
+                    coords="1054,602,1322,855" shape="rect">
+            </map>
+        </div>
+
+    </section>
+    <!-- END OF SECTION 4 THINGS TO DO WITH IMAGE MAP ----------------------------------->
+
+    <!-- FOOTER ------------------------------------------------------------------------->
+    <!-- <footer>
+        <p>Coded by <a href="https://github.com/anisam04">Ani Samajpati</a></p>
+    </footer>  -->
+
+    <footer class="bg-light text-center text-lg-start sticky-bottom" style="background-color: whitesmoke;">
+        <!-- Copyright -->
+        <div class="text-center p-3">
+            Coded by
+            <a class="text-dark" href="https://anisam04.github.io/">Ani Samajpati</a>
+        </div>
+        <a href="https://www.linkedin.com/in/asamajpati/"><i
+                class="fa-brands fa-linkedin fa-2xl fa-align-right"></i></a>
+        <a href="https://github.com/anisam04"><i class="fa-brands fa-github fa-2xl fa-align-right"></i></a>
+        <br />
+
+
+    </footer>
+    <!-- END FOOTER --------------------------------------------------------------------->
+</body>
+
+</html>
