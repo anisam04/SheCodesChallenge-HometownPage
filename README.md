@@ -5,7 +5,7 @@ It was only possbile to submit a valid and single HTML file, including the conte
 The HTML file must contain the HTML code, CSS code, and, optionally, JavaScript code. 
 It's only possible to submit one HTML file, so multi-page websites are not admittable.
 
-I used the following to make my site stand out:
+I made my site on Mumbai where I grew up. I used the following to make my site stand out:
 - CSS Animation for waves
 - Carousel
 - Image map to create multiple links on one image
